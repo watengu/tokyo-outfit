@@ -1,17 +1,20 @@
 @import "tailwindcss";
 
 /* What to Wear in Tokyo Today — theme tokens.
-   Clean sky-and-stone palette, friendly travel-tool feel. */
+   Warm paper, near-black ink, one vermillion accent.
+   Editorial, type-first, app-like. */
 :root {
-  --bg: #f4f7f9;
-  --surface: #ffffff;
-  --text: #22303a;
-  --muted: #6d7f8c;
-  --line: #dde7ec;
-  --accent: #0e7c86;
-  --accent-strong: #0a5f66;
-  --accent-soft: #e2f2f3;
-  --sun: #e8a13a;
+  --bg: #faf6ef;
+  --surface: #fffdf8;
+  --ink: #17140f;
+  --ink-soft: #221e17;
+  --text: #17140f;
+  --muted: #7d7466;
+  --muted-dark: #a99e8d;
+  --line: #e4dbc9;
+  --line-dark: #37312a;
+  --accent: #e8490f;
+  --accent-bright: #ff6b35;
 
   --background: var(--bg);
   --foreground: var(--text);
@@ -29,4 +32,47 @@ body {
     "Helvetica Neue",
     Arial,
     sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--accent);
+  color: #fff;
+}
+
+/* Entrance motion: quiet rise + fade, staggered by inline delay. */
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.rise {
+  animation: rise 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes pulse-soft {
+  0%,
+  100% {
+    opacity: 0.35;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.pulse-soft {
+  animation: pulse-soft 1.4s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rise,
+  .pulse-soft {
+    animation: none;
+  }
 }

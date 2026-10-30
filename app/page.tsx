@@ -2,20 +2,14 @@ import OutfitToday from "./outfit-today";
 
 export default function Home() {
   return (
-    <main className="mx-auto w-full max-w-xl flex-1 px-4 py-8">
-      <header className="mb-5 text-center">
-        <h1 className="text-2xl font-bold leading-tight">
-          What to Wear in <span className="text-(--accent-strong)">Tokyo</span> Today
-        </h1>
-        <p className="mt-1.5 text-sm text-(--muted)">
-          A quick daily outfit guide for visitors, based on the season.
-        </p>
-      </header>
+    <main className="mx-auto w-full max-w-xl flex-1 px-5 pt-6 pb-10 sm:pt-10">
+      <h1 className="sr-only">What to Wear in Tokyo Today</h1>
 
       <OutfitToday />
 
-      <footer className="mt-8 text-center text-xs leading-relaxed text-(--muted)">
-        <p>v0 — based on seasonal climate averages for Tokyo. Always check the live forecast too.</p>
+      <footer className="mt-12 flex items-baseline justify-between border-t border-(--line) pt-4 text-[11px] tracking-[0.14em] text-(--muted) uppercase">
+        <span>Tokyo Outfit Daily</span>
+        <span>v0.1 — seasonal averages, not a live forecast</span>
       </footer>
     </main>
   );
