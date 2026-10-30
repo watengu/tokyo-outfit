@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+/* What to Wear in Tokyo Today — theme tokens.
+   Clean sky-and-stone palette, friendly travel-tool feel. */
+:root {
+  --bg: #f4f7f9;
+  --surface: #ffffff;
+  --text: #22303a;
+  --muted: #6d7f8c;
+  --line: #dde7ec;
+  --accent: #0e7c86;
+  --accent-strong: #0a5f66;
+  --accent-soft: #e2f2f3;
+  --sun: #e8a13a;
+
+  --background: var(--bg);
+  --foreground: var(--text);
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family:
+    ui-sans-system,
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
+}
