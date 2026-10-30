@@ -116,6 +116,17 @@ export default function OutfitToday() {
         <p className="mt-4 max-w-md text-[15px] leading-relaxed text-(--muted)">
           {band.summary}
         </p>
+        <figure className="mt-7 overflow-hidden rounded-[28px] border border-(--line)">
+          {/* Relative src: resolves under the Pages basePath (/tokyo-outfit/)
+              and against the site root in local dev. */}
+          <img
+            src="images/hero.webp"
+            alt="Illustrated editorial image of a Tokyo street outfit"
+            width={1280}
+            height={1920}
+            className="aspect-[4/5] w-full object-cover object-[50%_28%]"
+          />
+        </figure>
       </section>
 
       {/* Numbers as evidence */}

@@ -9,7 +9,7 @@ export default function Home() {
 
       <footer className="mt-12 flex items-baseline justify-between border-t border-(--line) pt-4 text-[11px] tracking-[0.14em] text-(--muted) uppercase">
         <span>Tokyo Outfit Daily</span>
-        <span>v0.1 — seasonal averages, not a live forecast</span>
+        <span>v0.2 — seasonal averages, not a live forecast</span>
       </footer>
     </main>
   );
