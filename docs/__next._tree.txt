@@ -1,2 +1,2 @@
-:HL["/tokyo-outfit/_next/static/chunks/3ty-skdh4qg93.css","style"]
-0:{"tree":{"name":"","param":null,"prefetchHints":4176,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}},"staleTime":300,"buildId":"jNKoOucsxrAAQY3wihANB"}
+:HL["/tokyo-outfit/_next/static/chunks/022kqtma5pp0m.css","style"]
+0:{"tree":{"name":"","param":null,"prefetchHints":4176,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}},"staleTime":300,"buildId":"w1fIRjA_pOEqrshxmPpmV"}
